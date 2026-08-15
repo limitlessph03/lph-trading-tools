@@ -123,6 +123,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt4-complete-suite",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/LPH%20COT%20market%20intelligence%20indicator-f7c6166.png/:/rs=w:370,cg:true,m",
     "description": "Complete MT4 collection of featured indicators, grouped indicator libraries, templates, and manual analysis and risk utilities."
   },
   {
@@ -139,6 +140,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt5-tools",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_MT5_Analysis_and_Risk_Utilities.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/LPH%20Hedge%20Recovery%20Planner.png/:/rs=w:370,cg:true,m",
     "description": "Grouped MT5 dashboards, panels, bridges, recovery planners, and order-book utilities for manual analysis and risk management—not an automated-trading product."
   },
   {
