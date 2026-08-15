@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Downloading Limitless PH Trading Tool...</title>
+  <title>Limitless PH Trading Tools Download</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
     body {
       margin: 0;
       min-height: 100vh;
-      background: #020617;
+      background: radial-gradient(800px circle at 50% 30%, rgba(34, 211, 238, 0.12), transparent 50%), #020617;
       color: #f8fafc;
       font-family: 'Plus Jakarta Sans', sans-serif;
       display: flex;
@@ -19,62 +19,88 @@
       box-sizing: border-box;
     }
     .card {
-      background: linear-gradient(145deg, #071426, #050d1a);
-      border: 1px solid rgba(34, 211, 238, 0.3);
-      box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+      background: linear-gradient(145deg, rgba(7, 20, 38, 0.95), rgba(5, 13, 26, 0.95));
+      border: 1px solid rgba(34, 211, 238, 0.35);
+      box-shadow: 0 0 50px rgba(34, 211, 238, 0.2);
       border-radius: 20px;
       padding: 40px 30px;
       text-align: center;
       max-width: 480px;
       width: 100%;
     }
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 4px solid rgba(34, 211, 238, 0.2);
-      border-top-color: #22d3ee;
+    .icon-box {
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
-      animation: spin 0.9s linear infinite;
-      margin: 0 auto 24px;
+      background: rgba(34, 211, 238, 0.12);
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #22d3ee;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
     h2 { font-size: 22px; margin: 0 0 10px; color: #fff; }
     p { font-size: 14px; color: #94a3b8; margin: 0 0 24px; line-height: 1.5; }
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       background: linear-gradient(135deg, #f5c542, #ffd86b);
       color: #0d0a04;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 12px 28px;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 14px 32px;
       border-radius: 999px;
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(245, 197, 66, 0.3);
-      transition: transform 0.2s;
+      box-shadow: 0 6px 25px rgba(245, 197, 66, 0.35);
+      transition: all 0.2s ease;
+      cursor: pointer;
     }
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(245, 197, 66, 0.5);
+    }
+    .footnote {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #64748b;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="spinner"></div>
-    <h2>Your download is starting...</h2>
-    <p>Please wait a moment while we fetch your official Limitless PH trading tool bundle.</p>
-    <a id="manualLink" href="#" class="btn">Click here if download doesn't start</a>
+    <div class="icon-box">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </div>
+    <h2>Limitless PH Trading Tools</h2>
+    <p>Click the button below to download the official MT4 indicators, EAs, and templates bundle.</p>
+    <a id="downloadBtn" href="https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip" class="btn" download>
+      ⬇️ Download ZIP Package (3.65 MB)
+    </a>
+    <div class="footnote">Official verified member resource</div>
   </div>
 
   <script>
     (function () {
       var params = new URLSearchParams(window.location.search);
-      var fileUrl = params.get('url') || 'https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip';
-      
-      var manualLink = document.getElementById('manualLink');
-      if (manualLink) manualLink.href = fileUrl;
-
-      // Trigger download in top window
-      setTimeout(function () {
-        window.location.href = fileUrl;
-      }, 500);
+      var target = params.get('url') || 'https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip';
+      var btn = document.getElementById('downloadBtn');
+      if (btn && target) {
+        btn.href = target;
+      }
+      try {
+        var autoLink = document.createElement('a');
+        autoLink.href = btn.href;
+        autoLink.download = '';
+        document.body.appendChild(autoLink);
+        autoLink.click();
+        document.body.removeChild(autoLink);
+      } catch(e){}
     })();
   </script>
 </body>
