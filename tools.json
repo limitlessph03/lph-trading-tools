@@ -9,7 +9,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt4-all",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Complete institutional suite containing all MT4 indicators, execution EAs, and workspace templates in one bundle."
   },
   {
@@ -22,7 +22,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-institutional-eas",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Institutional automated execution algorithms with risk parity sizing and trailing protection."
   },
   {
@@ -35,7 +35,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-institutional-indicators",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Smart money concepts, institutional order blocks, volume profile, and dynamic session VWAP."
   },
   {
@@ -48,7 +48,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-institutional-templates",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Pre-configured institutional workspace templates for rapid multi-timeframe analysis."
   },
   {
@@ -61,7 +61,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=mytrader-app-suite",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "All-in-one companion utility for lot size calculations, basket management, and trade logs."
   },
   {
@@ -74,7 +74,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=retail-cluster-orderbook",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Visualizes retail stop-loss clusters and pending order liquidity pools in real time."
   },
   {
@@ -87,7 +87,7 @@
     "fileSize": "ZIP • 3.65 MB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=other-mt4-indicators",
-    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
     "description": "Supplementary tools including news event countdowns, ADR meters, and session clocks."
   }
 ]
