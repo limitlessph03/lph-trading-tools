@@ -1,14 +1,26 @@
 [
   {
+    "id": "lph-mt4-all",
+    "name": "MT4 - LPH Institutional Indicators and EAs (Complete Suite)",
+    "category": "suite",
+    "categoryLabel": "Complete Bundle",
+    "tagColor": "gold",
+    "version": "v1.0.0",
+    "fileSize": "ZIP • Full Pack",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
+    "description": "Complete institutional suite containing all MT4 indicators, execution EAs, and workspace templates in one bundle."
+  },
+  {
     "id": "lph-institutional-eas",
     "name": "LPH Institutional EAs",
     "category": "ea",
     "categoryLabel": "Expert Advisors",
     "tagColor": "gold",
-    "version": "v2.4",
-    "fileSize": "ZIP • 14.8 MB",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
     "updated": "Aug 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_EAs.zip",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "Institutional automated execution algorithms with risk parity sizing and trailing protection."
   },
   {
@@ -17,10 +29,10 @@
     "category": "indicators",
     "categoryLabel": "MT4 Indicators",
     "tagColor": "cyan",
-    "version": "v3.1",
-    "fileSize": "ZIP • 8.2 MB",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
     "updated": "Aug 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_Indicators.zip",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "Smart money concepts, institutional order blocks, volume profile, and dynamic session VWAP."
   },
   {
@@ -29,10 +41,10 @@
     "category": "templates",
     "categoryLabel": "Chart Templates",
     "tagColor": "green",
-    "version": "v1.8",
-    "fileSize": "ZIP • 2.1 MB",
-    "updated": "Jul 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_Templates.zip",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "Pre-configured institutional workspace templates for rapid multi-timeframe analysis."
   },
   {
@@ -41,10 +53,10 @@
     "category": "suite",
     "categoryLabel": "App Suite",
     "tagColor": "blue",
-    "version": "v4.0",
-    "fileSize": "ZIP • 45.0 MB",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
     "updated": "Aug 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MyTrader_App_Suite.zip",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "All-in-one companion utility for lot size calculations, basket management, and trade logs."
   },
   {
@@ -53,10 +65,10 @@
     "category": "indicators",
     "categoryLabel": "Liquidity & Stops",
     "tagColor": "red",
-    "version": "v2.0",
-    "fileSize": "ZIP • 5.4 MB",
-    "updated": "Jun 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Indicators_Retail_Cluster_Orderbook.zip",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "Visualizes retail stop-loss clusters and pending order liquidity pools in real time."
   },
   {
@@ -65,10 +77,10 @@
     "category": "indicators",
     "categoryLabel": "MT4 Utilities",
     "tagColor": "purple",
-    "version": "v1.2",
-    "fileSize": "ZIP • 11.6 MB",
-    "updated": "May 2026",
-    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Other_MT4_Indicators.zip",
+    "version": "v1.0.0",
+    "fileSize": "ZIP",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/user-attachments/files/31102393/MT4.-.LPH.Institutional.Indicators.and.EAs.zip",
     "description": "Supplementary tools including news event countdowns, ADR meters, and session clocks."
   }
 ]
