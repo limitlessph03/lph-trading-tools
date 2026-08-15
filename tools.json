@@ -28,7 +28,7 @@
   "updated": "Aug 2026",
   "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-macro-technical-multiscanner",
   "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
-  "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/LPH%20Paxg-Gold%20order%20book-5b99709.png/:/rs=w:984,h:984",
+  "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/MacroTechnical%20Ultimate%20Indicator.png/:/rs=w:1280,h:853",
   "description": "LPH Macro Technical MultiScanner indicator for MT4 showing multi-market alignment, macro data, and technical filters on a gold price chart."
   },
   {
@@ -44,6 +44,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-paxg-orderbook-dashboard",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/LPH%20Paxg-Gold%20order%20book-5b99709.png/:/rs=w:984,h:984",
     "description": "Solo-branded PAXG order-book and price-wall dashboard for supplemental gold-liquidity context."
   },
   {
@@ -59,6 +60,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-trendfib-volume-confluence",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/lph%20trendfib.jpg/:/rs=w:984,h:553",
     "description": "Solo-branded trend, Fibonacci, and volume-confluence overlay for discretionary chart analysis."
   },
   {
@@ -74,6 +76,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt4-indicator-library",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/Limitless%20PH%202.0.png/:/rs=w:1280,h:427",
     "description": "Grouped MT4 indicators covering liquidity, regime, market profile, TDI, ATR stops, positioning, and chart utilities."
   },
   {
@@ -89,6 +92,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-analysis-risk-utilities",
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MT4_LPH_Institutional_Indicators_and_EAs.zip",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/f1a5b452-1d8c-4015-8c61-1cbbf2930284/LPH%20Open%20Positions%20Pain%20Dashboard-25bc5fc.png/:/rs=w:984,h:1230",
     "description": "Grouped dashboards, planners, panels, bridges, and research utilities. These are decision-support tools—not an automated-trading product."
   },
   {
