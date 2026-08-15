@@ -1,0 +1,48 @@
+<style>
+  :root{--bg:#020617;--panel:#071426;--line:rgba(255,255,255,.09);--text:#f8fafc;--muted:#94a3b8;--gold:#f5c542;--cyan:#22d3ee}
+  *{box-sizing:border-box}.lph-tools{min-height:100vh;padding:30px 0 60px;background:radial-gradient(800px circle at 15% 10%,rgba(34,211,238,.09),transparent 40%),radial-gradient(800px circle at 85% 25%,rgba(245,197,66,.07),transparent 40%),var(--bg);color:var(--text);font-family:Arial,sans-serif}.lph-wrap{width:min(1180px,calc(100% - 32px));margin:auto}.lph-note{border:1px solid rgba(34,211,238,.35);background:rgba(34,211,238,.04);border-radius:12px;padding:13px 18px;margin-bottom:24px;color:var(--muted);font-size:12px;text-align:center}.lph-note strong{color:var(--cyan)}.lph-eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.lph-tools h1{font-size:clamp(28px,4vw,46px);margin:10px 0 6px}.lph-sub{color:var(--muted);font-size:14px;margin:0 0 24px}.lph-controls{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:20px}.lph-filters{display:flex;gap:6px;flex-wrap:wrap}.lph-filter{border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);padding:8px 13px;border-radius:999px;font-weight:700;cursor:pointer}.lph-filter.active{background:linear-gradient(135deg,var(--gold),#ffd86b);color:#0d0a04}.lph-search{min-width:220px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);color:#fff}.lph-section{margin:26px 0 10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.lph-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lph-card{border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(7,20,38,.9),rgba(5,13,26,.9));padding:20px;display:flex;justify-content:space-between;gap:18px;align-items:center}.lph-card.featured{border-color:rgba(245,197,66,.32);box-shadow:0 12px 35px rgba(0,0,0,.18)}.lph-info{min-width:0}.lph-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}.lph-tag,.lph-pill{font-size:10px;font-weight:800;border-radius:999px;padding:4px 9px;text-transform:uppercase}.lph-tag{background:var(--gold);color:#121008}.lph-pill{border:1px solid var(--line);color:var(--muted)}.lph-name{font-size:16px;margin:0 0 5px}.lph-desc{font-size:12px;line-height:1.45;color:var(--muted);margin:0}.lph-action{flex:0 0 auto;text-align:right}.lph-download{display:inline-flex;padding:10px 18px;border-radius:999px;border:1px solid rgba(34,211,238,.35);color:var(--cyan);font-size:12px;font-weight:800;text-decoration:none}.lph-download:hover{background:var(--cyan);color:#02111a}.lph-coming{display:inline-flex;padding:9px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:800}.lph-size{display:block;color:#64748b;font-size:10px;margin-top:5px}.lph-empty{grid-column:1/-1;padding:35px;text-align:center;color:var(--muted)}
+  @media(max-width:760px){.lph-list{grid-template-columns:1fr}.lph-card{align-items:flex-start;flex-direction:column}.lph-action{width:100%;text-align:left}.lph-controls{align-items:stretch;flex-direction:column}.lph-search{width:100%}}
+</style>
+<div class="lph-tools"><div class="lph-wrap">
+  <div class="lph-note"><strong>Decision-support tools only.</strong> Limitless PH does not provide an automated-trading product in this repository. Trading involves risk.</div>
+  <div class="lph-eyebrow">Member Resource Portal</div>
+  <h1>Trading Tools Repository</h1>
+  <p class="lph-sub">Featured indicators receive dedicated branding. Supporting indicators, templates, dashboards, and risk utilities remain organized as grouped collections.</p>
+  <div class="lph-controls">
+    <div class="lph-filters">
+      <button class="lph-filter active" data-filter="all">All</button>
+      <button class="lph-filter" data-filter="featured">Featured</button>
+      <button class="lph-filter" data-filter="MT4">MT4</button>
+      <button class="lph-filter" data-filter="MT5">MT5</button>
+      <button class="lph-filter" data-filter="templates">Templates</button>
+      <button class="lph-filter" data-filter="utilities">Utilities</button>
+    </div>
+    <input id="lphSearch" class="lph-search" type="search" placeholder="Search tools…" aria-label="Search trading tools">
+  </div>
+  <div id="lphTools" class="lph-list"><div class="lph-empty">Loading latest tools…</div></div>
+</div></div>
+<script>
+(function(){
+  var registry='https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/tools.json';
+  var tools=[],filter='all',query='';
+  var container=document.getElementById('lphTools');
+  function esc(value){var d=document.createElement('div');d.textContent=value||'';return d.innerHTML}
+  function matches(tool){
+    var f=filter==='all'||(filter==='featured'&&tool.featured)||tool.platform===filter||tool.category===filter;
+    var text=((tool.name||'')+' '+(tool.description||'')+' '+(tool.platform||'')).toLowerCase();
+    return f&&text.indexOf(query)>-1;
+  }
+  function render(){
+    var visible=tools.filter(matches);if(!visible.length){container.innerHTML='<div class="lph-empty">No matching tools found.</div>';return}
+    container.innerHTML=visible.map(function(tool){
+      var action=tool.availability==='coming-soon'
+        ? '<span class="lph-coming">Coming soon</span>'
+        : '<a class="lph-download" href="'+esc(tool.downloadUrl)+'" target="_top" rel="noopener noreferrer">View download</a>';
+      return '<article class="lph-card '+(tool.featured?'featured':'')+'"><div class="lph-info"><div class="lph-meta"><span class="lph-tag">'+esc(tool.categoryLabel)+'</span><span class="lph-pill">'+esc(tool.platform)+'</span><span class="lph-pill">'+esc(tool.version)+'</span></div><h3 class="lph-name">'+esc(tool.name)+'</h3><p class="lph-desc">'+esc(tool.description)+'</p></div><div class="lph-action">'+action+'<span class="lph-size">'+esc(tool.fileSize)+'</span></div></article>'
+    }).join('')
+  }
+  document.querySelectorAll('.lph-filter').forEach(function(button){button.addEventListener('click',function(){document.querySelectorAll('.lph-filter').forEach(function(b){b.classList.remove('active')});button.classList.add('active');filter=button.getAttribute('data-filter');render()})});
+  document.getElementById('lphSearch').addEventListener('input',function(e){query=e.target.value.toLowerCase().trim();render()});
+  fetch(registry+'?v='+Date.now()).then(function(r){if(!r.ok)throw Error();return r.json()}).then(function(data){tools=Array.isArray(data)?data:[];render()}).catch(function(){container.innerHTML='<div class="lph-empty">Tools registry is temporarily unavailable. Please refresh shortly.</div>'});
+})();
+</script>

@@ -124,7 +124,7 @@
         })
         .then(function (tools) {
           var tool = Array.isArray(tools) ? tools.find(function (item) { return item.id === toolId; }) : null;
-          if (!tool || !tool.fileUrl) throw new Error('Tool not found');
+          if (!tool) throw new Error('Tool not found');
 
           document.title = tool.name + ' | Limitless PH Download';
           document.getElementById('toolName').textContent = tool.name;
@@ -133,10 +133,15 @@
           document.getElementById('toolSize').textContent = tool.fileSize || 'ZIP package';
           document.getElementById('toolUpdated').textContent = 'Updated ' + (tool.updated || 'recently');
           document.getElementById('toolMeta').hidden = false;
-          btn.href = tool.fileUrl;
-          btn.textContent = 'Download ' + (tool.fileSize || 'ZIP Package');
-          btn.removeAttribute('aria-disabled');
-          status.textContent = 'Ready. Click the gold button to start the download.';
+          if (tool.availability === 'coming-soon' || !tool.fileUrl) {
+            btn.hidden = true;
+            status.textContent = 'This platform version is being prepared and verified. No download has been published yet.';
+          } else {
+            btn.href = tool.fileUrl;
+            btn.textContent = 'Download ' + (tool.fileSize || 'ZIP Package');
+            btn.removeAttribute('aria-disabled');
+            status.textContent = 'Ready. Click the gold button to start the download.';
+          }
         })
         .catch(function () {
           showError('We could not verify this tool in the official registry.');
