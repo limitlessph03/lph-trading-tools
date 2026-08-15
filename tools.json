@@ -135,20 +135,20 @@
     "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_MT5_Analysis_and_Risk_Utilities.zip",
     "description": "Grouped MT5 dashboards, panels, bridges, recovery planners, and order-book utilities for manual analysis and risk management—not an automated-trading product."
   },
-{
-  "id": "lph-mt5-indicator-library",
-  "name": "LPH MT5 Indicator Library",
-  "category": "indicators",
-  "categoryLabel": "Grouped Library",
-  "tagColor": "cyan",
-  "platform": "MT5",
-  "featured": false,
-  "availability": "available",
-  "version": "v1.1.0",
-  "fileSize": "ZIP • 377 KB",
-  "updated": "Sep 2026",
-  "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt5-indicator-library",
-  "fileUrl": "https://github.com/user-attachments/files/31105163/MT5.Indicators.zip",
-  "description": "Grouped MT5 indicators for technical analysis and structured discretionary trading."
-}
+  {
+    "id": "lph-mt5-indicator-library",
+    "name": "LPH MT5 Indicator Library",
+    "category": "indicators",
+    "categoryLabel": "Grouped Library",
+    "tagColor": "cyan",
+    "platform": "MT5",
+    "featured": false,
+    "availability": "available",
+    "version": "v1.1.0",
+    "fileSize": "ZIP • 2.4 MB",
+    "updated": "Sep 2026",
+    "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt5-indicator-library",
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.1.0/MT5_Indicators.zip",
+    "description": "Grouped MT5 indicators for technical analysis and structured discretionary trading."
+  }
 ]
