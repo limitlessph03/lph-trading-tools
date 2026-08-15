@@ -121,17 +121,18 @@
   },
   {
     "id": "lph-mt5-tools",
-    "name": "LPH MT5 Tools Collection",
+    "name": "LPH MT5 Analysis & Risk Utilities",
     "category": "mt5",
     "categoryLabel": "MT5",
     "tagColor": "cyan",
     "platform": "MT5",
     "featured": false,
-    "availability": "coming-soon",
-    "version": "In preparation",
-    "fileSize": "Not yet available",
-    "updated": "Coming soon",
+    "availability": "available",
+    "version": "v1.0.0",
+    "fileSize": "ZIP • 377 KB",
+    "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt5-tools",
-    "description": "MT5-native versions are being prepared and verified. No MT5 package is published yet."
+    "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_MT5_Analysis_and_Risk_Utilities.zip",
+    "description": "Grouped MT5 dashboards, panels, bridges, recovery planners, and order-book utilities for manual analysis and risk management—not an automated-trading product."
   }
 ]
