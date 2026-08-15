@@ -40,7 +40,8 @@
       margin: 0 auto 20px;
       color: #22d3ee;
     }
-    h2 { font-size: 22px; margin: 0 0 10px; color: #fff; }
+    .eyebrow { color: #f5c542; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+    h1 { font-size: 24px; margin: 0 0 10px; color: #fff; }
     p { font-size: 14px; color: #94a3b8; margin: 0 0 24px; line-height: 1.5; }
     .btn {
       display: inline-flex;
@@ -66,6 +67,11 @@
       font-size: 12px;
       color: #64748b;
     }
+    .meta { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin: -8px 0 24px; }
+    .pill { border: 1px solid rgba(255,255,255,.1); border-radius: 999px; padding: 5px 10px; color: #94a3b8; font-size: 11px; }
+    .status { min-height: 20px; margin-top: 16px; color: #94a3b8; font-size: 12px; }
+    .error { color: #fca5a5; }
+    .btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
   </style>
 </head>
 <body>
@@ -77,30 +83,64 @@
         <line x1="12" y1="15" x2="12" y2="3"></line>
       </svg>
     </div>
-    <h2>Limitless PH Trading Tools</h2>
-    <p>Click the button below to download the official MT4 indicators, EAs, and templates bundle.</p>
-    <a id="downloadBtn" href="https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip" class="btn" download>
-      ⬇️ Download ZIP Package (3.65 MB)
+    <div class="eyebrow">Official member resource</div>
+    <h1 id="toolName">Loading trading tool…</h1>
+    <p id="toolDescription">Checking the official Limitless PH tools registry.</p>
+    <div class="meta" id="toolMeta" hidden>
+      <span class="pill" id="toolVersion"></span>
+      <span class="pill" id="toolSize"></span>
+      <span class="pill" id="toolUpdated"></span>
+    </div>
+    <a id="downloadBtn" href="#" class="btn" aria-disabled="true">
+      Download ZIP Package
     </a>
-    <div class="footnote">Official verified member resource</div>
+    <div class="status" id="status">Preparing your download page…</div>
+    <div class="footnote">This manual second click is required because the member portal runs inside a protected website frame. The current package is the complete suite and may include additional tools.</div>
   </div>
 
   <script>
     (function () {
-      var params = new URLSearchParams(window.location.search);
-      var target = params.get('url') || 'https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/MT4_LPH_Institutional_Indicators_and_EAs.zip';
+      var registryUrl = 'https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/tools.json';
+      var toolId = new URLSearchParams(window.location.search).get('tool');
       var btn = document.getElementById('downloadBtn');
-      if (btn && target) {
-        btn.href = target;
+      var status = document.getElementById('status');
+
+      function showError(message) {
+        document.getElementById('toolName').textContent = 'Download unavailable';
+        document.getElementById('toolDescription').textContent = message;
+        status.textContent = 'Return to the Trading Tools portal and try again.';
+        status.className = 'status error';
       }
-      try {
-        var autoLink = document.createElement('a');
-        autoLink.href = btn.href;
-        autoLink.download = '';
-        document.body.appendChild(autoLink);
-        autoLink.click();
-        document.body.removeChild(autoLink);
-      } catch(e){}
+
+      if (!toolId || !/^[a-z0-9-]+$/.test(toolId)) {
+        showError('This download link is missing a valid tool identifier.');
+        return;
+      }
+
+      fetch(registryUrl + '?v=' + Date.now())
+        .then(function (response) {
+          if (!response.ok) throw new Error('Registry unavailable');
+          return response.json();
+        })
+        .then(function (tools) {
+          var tool = Array.isArray(tools) ? tools.find(function (item) { return item.id === toolId; }) : null;
+          if (!tool || !tool.fileUrl) throw new Error('Tool not found');
+
+          document.title = tool.name + ' | Limitless PH Download';
+          document.getElementById('toolName').textContent = tool.name;
+          document.getElementById('toolDescription').textContent = tool.description || 'Official Limitless PH trading tool.';
+          document.getElementById('toolVersion').textContent = tool.version || 'Current version';
+          document.getElementById('toolSize').textContent = tool.fileSize || 'ZIP package';
+          document.getElementById('toolUpdated').textContent = 'Updated ' + (tool.updated || 'recently');
+          document.getElementById('toolMeta').hidden = false;
+          btn.href = tool.fileUrl;
+          btn.textContent = 'Download ' + (tool.fileSize || 'ZIP Package');
+          btn.removeAttribute('aria-disabled');
+          status.textContent = 'Ready. Click the gold button to start the download.';
+        })
+        .catch(function () {
+          showError('We could not verify this tool in the official registry.');
+        });
     })();
   </script>
 </body>

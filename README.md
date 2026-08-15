@@ -14,7 +14,8 @@ Your website automatically reads the `tools.json` file in this repository.
    - Update `"version"` (e.g. `"v2.5"`)
    - Update `"fileSize"` (e.g. `"ZIP • 15.2 MB"`)
    - Update `"updated"` (e.g. `"Aug 2026"`)
-   - Update `"downloadUrl"` to your new release download link.
+   - Keep `"downloadUrl"` as the branded page URL using that tool's stable ID.
+   - Update `"fileUrl"` to your new release asset link.
 3. Commit your changes. **Your website updates automatically within minutes!**
 
 ### 2. Adding a New Tool
@@ -30,7 +31,8 @@ Add a new object inside `tools.json`:
   "version": "v1.0",
   "fileSize": "ZIP • 3.5 MB",
   "updated": "Aug 2026",
-  "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Your_File.zip",
+  "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=new-indicator-name",
+  "fileUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Your_File.zip",
   "description": "Brief description of the tool."
 }
 ```
@@ -38,3 +40,5 @@ Add a new object inside `tools.json`:
 ### 3. Categories & Colors
 * **Categories**: `ea`, `indicators`, `templates`, `suite`, `utilities`
 * **Tag Colors**: `gold`, `cyan`, `blue`, `green`, `red`, `purple`
+
+The GoDaddy portal must use `downloadUrl`. The branded page resolves the selected registry item and exposes `fileUrl` only after a manual second click; it never auto-redirects or accepts an arbitrary URL parameter.
