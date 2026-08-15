@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lph-institutional-eas",
+    "name": "LPH Institutional EAs",
+    "category": "ea",
+    "categoryLabel": "Expert Advisors",
+    "tagColor": "gold",
+    "version": "v2.4",
+    "fileSize": "ZIP • 14.8 MB",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_EAs.zip",
+    "description": "Institutional automated execution algorithms with risk parity sizing and trailing protection."
+  },
+  {
+    "id": "lph-institutional-indicators",
+    "name": "LPH Institutional Indicators",
+    "category": "indicators",
+    "categoryLabel": "MT4 Indicators",
+    "tagColor": "cyan",
+    "version": "v3.1",
+    "fileSize": "ZIP • 8.2 MB",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_Indicators.zip",
+    "description": "Smart money concepts, institutional order blocks, volume profile, and dynamic session VWAP."
+  },
+  {
+    "id": "lph-institutional-templates",
+    "name": "LPH Institutional Templates",
+    "category": "templates",
+    "categoryLabel": "Chart Templates",
+    "tagColor": "green",
+    "version": "v1.8",
+    "fileSize": "ZIP • 2.1 MB",
+    "updated": "Jul 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/LPH_Institutional_Templates.zip",
+    "description": "Pre-configured institutional workspace templates for rapid multi-timeframe analysis."
+  },
+  {
+    "id": "mytrader-app-suite",
+    "name": "MyTrader App Suite",
+    "category": "suite",
+    "categoryLabel": "App Suite",
+    "tagColor": "blue",
+    "version": "v4.0",
+    "fileSize": "ZIP • 45.0 MB",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/MyTrader_App_Suite.zip",
+    "description": "All-in-one companion utility for lot size calculations, basket management, and trade logs."
+  },
+  {
+    "id": "retail-cluster-orderbook",
+    "name": "Indicators - Retail cluster orderbook stops and orders",
+    "category": "indicators",
+    "categoryLabel": "Liquidity & Stops",
+    "tagColor": "red",
+    "version": "v2.0",
+    "fileSize": "ZIP • 5.4 MB",
+    "updated": "Jun 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Indicators_Retail_Cluster_Orderbook.zip",
+    "description": "Visualizes retail stop-loss clusters and pending order liquidity pools in real time."
+  },
+  {
+    "id": "other-mt4-indicators",
+    "name": "Other MT4 Indicators",
+    "category": "indicators",
+    "categoryLabel": "MT4 Utilities",
+    "tagColor": "purple",
+    "version": "v1.2",
+    "fileSize": "ZIP • 11.6 MB",
+    "updated": "May 2026",
+    "downloadUrl": "https://github.com/limitlessph03/lph-trading-tools/releases/download/v1.0.0/Other_MT4_Indicators.zip",
+    "description": "Supplementary tools including news event countdowns, ADR meters, and session clocks."
+  }
+]
