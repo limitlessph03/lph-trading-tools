@@ -12,7 +12,7 @@
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-extension-probability-map",
     "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_ExtensionProbabilityMap.zip",
-    "imageUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/Alpha_Gold/LPH_ExtensionProbabilityMap_Guide.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/Alpha_Gold/LPH_ExtensionProbabilityMap_Banner.jpg",
     "description": "Daily extension probability and decay map for Gold (XAUUSD). Evaluates post-breakout continuation vs fade probabilities across 1d/3d/5d horizons."
   },
   {
@@ -176,3 +176,4 @@
     "description": "Grouped MT5 indicators for technical analysis and structured discretionary trading."
   }
 ]
+
