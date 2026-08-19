@@ -7,7 +7,7 @@
     "tagColor": "gold",
     "platform": "MT4 / MT5",
     "featured": true,
-    "version": "v1.10",
+    "version": "v1.20",
     "fileSize": "ZIP • 832 KB",
     "updated": "Aug 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-extension-probability-map",
@@ -176,4 +176,5 @@
     "description": "Grouped MT5 indicators for technical analysis and structured discretionary trading."
   }
 ]
+
 
