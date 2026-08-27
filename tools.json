@@ -174,6 +174,21 @@
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-mt5-indicator-library",
     "fileUrl": "https://github.com/user-attachments/files/31105163/MT5.Indicators.zip",
     "description": "Grouped MT5 indicators for technical analysis and structured discretionary trading."
+  },
+  {
+    "id": "lph-gold-retrace-probability",
+    "name": "LPH Gold Retrace Probability",
+    "category": "featured",
+    "categoryLabel": "Featured Indicator",
+    "tagColor": "gold",
+    "platform": "MT4 / MT5",
+    "featured": true,
+    "version": "MT4 v2.20 / MT5 v2.11",
+    "fileSize": "ZIP • 176 KB",
+    "updated": "Aug 2026",
+    "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-gold-retrace-probability",
+    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Gold_Retrace_Probability_MT4_MT5.zip",
+    "description": "XAUUSD historical-context indicator estimating 3-day and 5-day retracement continuation and recovery probabilities after qualifying bearish D1 events, with volume, ATR-decay, and regime conditioning. Analysis only; places no orders."
   }
 ]
 
