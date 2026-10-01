@@ -189,6 +189,22 @@
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-gold-retrace-probability",
     "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Gold_Retrace_Probability_MT4_MT5.zip",
     "description": "XAUUSD historical-context indicator estimating 3-day and 5-day retracement continuation and recovery probabilities after qualifying bearish D1 events, with volume, ATR-decay, and regime conditioning. Analysis only; places no orders."
+  },
+  {
+    "id": "lph-computational-hedge-guard",
+    "name": "LPH Computational Hedge Guard",
+    "category": "featured",
+    "categoryLabel": "Featured Tool",
+    "tagColor": "cyan",
+    "platform": "MT4 / MT5",
+    "featured": true,
+    "version": "v1.00.2 RC",
+    "fileSize": "ZIP • 20.7 MB",
+    "updated": "Oct 2026",
+    "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-computational-hedge-guard",
+    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH%20Computational%20hedge.zip",
+    "imageUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/hedge_guard_hero_banner.png",
+    "description": "Adaptive hedge and margin-survival guard for MT4 and MT5 hedging accounts. Dual-mode drawdown protection featuring Neutral and Thesis-Invalidation Leaning profiles with strict margin survival and stress gating."
   }
 ]
 
