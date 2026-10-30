@@ -47,11 +47,12 @@ Use `featured: true` only for individually branded flagship indicators. Keep sup
 
 The GoDaddy portal must use `downloadUrl`. The branded page resolves the selected registry item and exposes `fileUrl` only after a manual second click; it never auto-redirects or accepts an arbitrary URL parameter.
 
-### Manual Tradability Advisor v0.10
+### Manual Tradability Advisor - Multi-Asset v0.20
 
-The MT4 and MT5 catalog entries share
-`files/LPH_Manual_Tradability_Filter_v0_1.zip`, a source-only research package.
-Separate entries keep it visible in each platform filter. No compiled binaries,
-native runtime validation, or trading-performance validation are included.
-Internal research notes are excluded; the ZIP has its own current checksum manifest.
-The portal reads `main/tools.json` and GitHub Pages deploys from `main` at `/`.
+The existing MT4 and MT5 catalog IDs share
+`files/LPH_Manual_Tradability_Filter_v0_1.zip`, now including the v0.20
+multi-asset scanners and legacy v0.10 indicators. Supplied MT4 EX4 binaries
+and platform sources are included; MT5 requires compilation. Native compilation,
+binary/source correspondence, runtime, and trading performance remain unverified.
+Private research notes are excluded. The ZIP contains a current checksum manifest.
+GitHub Pages deploys from `main`; the member portal reads `main/tools.json`.

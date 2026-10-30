@@ -215,12 +215,12 @@
     "platform": "MT4",
     "featured": false,
     "availability": "available",
-    "version": "v0.10 - Source only",
-    "fileSize": "ZIP • 20.1 KB",
+    "version": "v0.20 - Multi-asset research",
+    "fileSize": "ZIP • 110.7 KB",
     "updated": "Oct 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-manual-tradability-filter-mt4",
     "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Manual_Tradability_Filter_v0_1.zip",
-    "description": "Read-only H1 environment advisory for manual setup review. MT4 source-only research prototype; compile in MetaEditor and validate on demo. Places no orders. Trading performance and native terminal behavior remain unverified."
+    "description": "Read-only H1 multi-asset scanner for manual setup review. Scan a custom symbol list or Market Watch. MT4 source and supplied EX4 binaries included. Research prototype; native runtime and trading performance remain unverified. Places no orders."
   },
   {
     "id": "lph-manual-tradability-filter-mt5",
@@ -231,11 +231,11 @@
     "platform": "MT5",
     "featured": false,
     "availability": "available",
-    "version": "v0.10 - Source only",
-    "fileSize": "ZIP • 20.1 KB",
+    "version": "v0.20 - Multi-asset research",
+    "fileSize": "ZIP • 110.7 KB",
     "updated": "Oct 2026",
     "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-manual-tradability-filter-mt5",
     "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Manual_Tradability_Filter_v0_1.zip",
-    "description": "Read-only H1 environment advisory for manual setup review. MT5 source-only research prototype; compile in MetaEditor and validate on demo. Places no orders. Trading performance and native terminal behavior remain unverified."
+    "description": "Read-only H1 multi-asset scanner for manual setup review. Scan a custom symbol list or Market Watch. MT5 source included; compile in MetaEditor. Research prototype; native runtime and trading performance remain unverified. Places no orders."
   }
 ]
