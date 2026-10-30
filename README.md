@@ -46,3 +46,12 @@ Add a new object inside `tools.json`:
 Use `featured: true` only for individually branded flagship indicators. Keep supporting resources grouped. Do not describe analysis dashboards or risk utilities as automated trading.
 
 The GoDaddy portal must use `downloadUrl`. The branded page resolves the selected registry item and exposes `fileUrl` only after a manual second click; it never auto-redirects or accepts an arbitrary URL parameter.
+
+### Manual Tradability Advisor v0.10
+
+The MT4 and MT5 catalog entries share
+`files/LPH_Manual_Tradability_Filter_v0_1.zip`, a source-only research package.
+Separate entries keep it visible in each platform filter. No compiled binaries,
+native runtime validation, or trading-performance validation are included.
+Internal research notes are excluded; the ZIP has its own current checksum manifest.
+The portal reads `main/tools.json` and GitHub Pages deploys from `main` at `/`.

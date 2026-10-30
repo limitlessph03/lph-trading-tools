@@ -205,7 +205,37 @@
     "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH%20Computational%20hedge.zip",
     "imageUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/hedge_guard_hero_banner.png",
     "description": "Adaptive hedge and margin-survival guard for MT4 and MT5 hedging accounts. Dual-mode drawdown protection featuring Neutral and Thesis-Invalidation Leaning profiles with strict margin survival and stress gating."
+  },
+  {
+    "id": "lph-manual-tradability-filter-mt4",
+    "name": "LPH Manual Tradability Advisor",
+    "category": "indicators",
+    "categoryLabel": "Research Prototype",
+    "tagColor": "cyan",
+    "platform": "MT4",
+    "featured": false,
+    "availability": "available",
+    "version": "v0.10 - Source only",
+    "fileSize": "ZIP • 20.1 KB",
+    "updated": "Oct 2026",
+    "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-manual-tradability-filter-mt4",
+    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Manual_Tradability_Filter_v0_1.zip",
+    "description": "Read-only H1 environment advisory for manual setup review. MT4 source-only research prototype; compile in MetaEditor and validate on demo. Places no orders. Trading performance and native terminal behavior remain unverified."
+  },
+  {
+    "id": "lph-manual-tradability-filter-mt5",
+    "name": "LPH Manual Tradability Advisor",
+    "category": "indicators",
+    "categoryLabel": "Research Prototype",
+    "tagColor": "cyan",
+    "platform": "MT5",
+    "featured": false,
+    "availability": "available",
+    "version": "v0.10 - Source only",
+    "fileSize": "ZIP • 20.1 KB",
+    "updated": "Oct 2026",
+    "downloadUrl": "https://limitlessph03.github.io/lph-trading-tools/download.html?tool=lph-manual-tradability-filter-mt5",
+    "fileUrl": "https://raw.githubusercontent.com/limitlessph03/lph-trading-tools/main/files/LPH_Manual_Tradability_Filter_v0_1.zip",
+    "description": "Read-only H1 environment advisory for manual setup review. MT5 source-only research prototype; compile in MetaEditor and validate on demo. Places no orders. Trading performance and native terminal behavior remain unverified."
   }
 ]
-
-
